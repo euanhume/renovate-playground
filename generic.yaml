@@ -1,2 +1,2 @@
-redisImage: redis:6.0.1
+redisImage: redis:6.2.14
 nginxImage: nginx:1.19.0
