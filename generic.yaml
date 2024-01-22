@@ -1,2 +1,2 @@
-pythonImage: python:3.21.1
+redisImage: redis:6.0.1
 nginxImage: nginx:1.19.0
