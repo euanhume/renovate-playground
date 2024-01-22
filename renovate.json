@@ -4,11 +4,10 @@
       {
         "fileMatch": ["^generic\\.yaml$"],
         "matchStrings": [
-          "(?<depName>\\w+Image):\\s*(?<currentValue>\\d+\\.\\d+\\.\\d+)"
+          "(?<depName>\\w+Image):\\s*(?<lookupName>\\w+):(?<currentValue>\\d+\\.\\d+\\.\\d+)"
         ],
         "datasourceTemplate": "docker",
         "versioningTemplate": "semver"
       }
     ]
-}
-  
+}  

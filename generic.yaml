@@ -1,2 +1,2 @@
-pythonImage: 3.21.1
-nginxImage: 1.19.0
+pythonImage: python:3.21.1
+nginxImage: nginx:1.19.0
