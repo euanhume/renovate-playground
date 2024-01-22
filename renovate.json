@@ -1,0 +1,12 @@
+{
+    "extends": ["config:base"],
+    "regexManagers": [
+        {
+        "fileMatch": ["^nginx-deployment\\.yaml$"],
+        "matchStrings": ["image: nginx:(?<currentValue>.*?)\\n"],
+        "datasource": "docker",
+        "depNameTemplate": "nginx"
+        }
+    ]
+}
+  
