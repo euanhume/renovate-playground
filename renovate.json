@@ -2,12 +2,11 @@
     "extends": ["config:base"],
     "regexManagers": [
       {
-        "fileMatch": ["^nginx-deployment\\.yaml$"],
+        "fileMatch": ["^generic\\.yaml$"],
         "matchStrings": [
-          "image: nginx:(?<currentValue>\\d+\\.\\d+\\.\\d+)"
+          "(?<depName>\\w+Image):\\s*(?<currentValue>\\d+\\.\\d+\\.\\d+)"
         ],
         "datasourceTemplate": "docker",
-        "depNameTemplate": "nginx",
         "versioningTemplate": "semver"
       }
     ]
