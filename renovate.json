@@ -1,13 +1,10 @@
 {
-    "extends": ["config:base"],
-    "regexManagers": [
-      {
-        "fileMatch": ["^generic\\.yaml$"],
-        "matchStrings": [
-          "(?<depName>\\w+Image):\\s*(?<lookupName>\\w+):(?<currentValue>\\d+\\.\\d+\\.\\d+)"
-        ],
-        "datasourceTemplate": "docker",
-        "versioningTemplate": "semver"
-      }
-    ]
-}  
+  "docker": {
+    "enabled": true
+  },
+  "packageRules": [
+    {
+      "datasources": ["docker"]
+    }
+  ]
+}
