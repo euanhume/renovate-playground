@@ -1,4 +1,4 @@
-FROM redis:6.0.1
+FROM redis:8.10.1
 
 EXPOSE 6379
 
